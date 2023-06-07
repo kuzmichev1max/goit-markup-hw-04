@@ -18,10 +18,22 @@ body {
   font-weight: 400;
   text-decoration: none;
 }
+a {
 
+  text-decoration: none;
+}
 ul {
   list-style: none;
+  padding: 0px;
+  margin: 0;
 }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .logo {
   color: var(--color-brand);
   font-family: "Raleway";
@@ -59,6 +71,7 @@ ul {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  
 }
 
 .contact-link:hover,
@@ -71,12 +84,10 @@ ul {
   text-decoration: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 .hero-business {
   background-color: var(--color-bg);
+  text-align: center;
+  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -84,24 +95,36 @@ a {
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-top: 200px;
+  
 }
 
-.hero-button {
+.button {
+  display: inline-block;
+  border: 1px solid transparent;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.hero.button {
+  min-width: 200px;
+  padding: 10px 24px;
   background-color: var(--color-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--color-invert);
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  text-align: center;
-  cursor: pointer;
+  margin-bottom: 200px;
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero.button:hover,
+.hero.button:focus {
   background-color: var(--color-action);
 }
 .visually-hidden {
@@ -125,22 +148,29 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-caption);
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .title-text {
   line-height: calc(24 / 14);
+  margin-top: 0;
+  margin-bottom: 94px;
 }
 
-.work-title {
+.work .title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   color: var(--color-caption);
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .team {
   background-color: var(--color-filter);
+  text-align: center;
 }
 
 .team .card {
@@ -149,15 +179,26 @@ a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.work .container {
+  margin-bottom: 94px;
+}
 .team-title {
+  display: inline-block;
   color: var(--color-caption);
   font-size: 36px;
   line-height: calc(42 / 36);
-  text-align: center;
   letter-spacing: 0.02em;
   font-weight: 700;
+  margin-bottom: 50px;
 }
 
+.work {
+  margin-bottom: 94px;
+}
+
+.team-list .img {
+  padding-bottom: 30px;
+}
 .team .title {
   color: var(--color-caption);
   font-size: 16px;
@@ -203,7 +244,7 @@ a {
   visibility: hidden;
 }
 
-.btn {
+.button.filters {
   background-color: var(--color-filter);
   color: var(--color-caption);
   font-weight: 500;
@@ -214,8 +255,8 @@ a {
   border-radius: 4px;
 }
 
-.btn:hover,
-.btn:focus {
+.button.filters:hover,
+button.filters:focus {
   background-color: var(--color-brand);
   color: var(--color-invert);
 }
