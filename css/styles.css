@@ -35,7 +35,7 @@ img {
 }
 
 .container {
-  width: 1230px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -45,7 +45,7 @@ img {
   padding-bottom: 94px;
 }
 
-.main-nav {
+.header .container{
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--color-header-border);
@@ -67,12 +67,7 @@ img {
   color: var(--color-invert);
 }
 
-.header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.site-nav {
+.site-nav .list{
   display: flex;
   margin-left: 93px;
 }
@@ -139,14 +134,18 @@ img {
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
   color: var(--color-invert);
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 30px;
+  width: 696px;
 }
 
 .button {
@@ -160,6 +159,7 @@ img {
 .hero.button {
   min-width: 200px;
   padding: 10px 24px;
+  
   background-color: var(--color-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--color-invert);
@@ -174,8 +174,7 @@ img {
 }
 
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 0;
 }
 
 .visually-hidden {
@@ -251,11 +250,15 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
+.card .box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-title {
   margin-bottom: 50px;
   margin-top: 0;
 
-  display: inline-block;
   color: var(--color-caption);
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -263,24 +266,22 @@ img {
   font-weight: 700;
 }
 
-.team-list .img {
-  margin-bottom: 30px;
-}
-
 .team .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  
   color: var(--color-caption);
   font-size: 16px;
   line-height: calc(19 / 16);
-  margin-top: 0;
-  margin-bottom: 10px;
 }
 
 .team .text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   font-size: 16px;
   line-height: 1.5em;
   letter-spacing: 0.02em;
-  margin-top: 0;
-  margin-bottom: 30px;
 }
 
 .footer {
@@ -380,10 +381,13 @@ button.filter:focus {
   border-bottom: 1px solid #eeeeee;
 }
 
+.projects .box {
+  padding: 20px 24px;
+}
+
 .projects .title {
   margin-top: 0;
   margin-bottom: 4px;
-  padding: 24px 10px 10px 24px;
 
   font-weight: 700;
   font-size: 18px;
@@ -393,8 +397,6 @@ button.filter:focus {
 }
 
 .projects .text {
-  padding-left: 24px;
-  padding-bottom: 15px;
 
   font-size: 16px;
   line-height: calc(30 / 16);
