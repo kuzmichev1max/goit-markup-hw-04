@@ -49,7 +49,7 @@ img {
   border-bottom: 1px solid var(--color-header-border);
 }
 
-.header .container{
+.header .container {
   display: flex;
   align-items: center;
 }
@@ -74,7 +74,7 @@ img {
   margin-left: 93px;
 }
 
-.site-nav .list{
+.site-nav .list {
   display: flex;
 }
 
@@ -165,7 +165,7 @@ img {
 .hero.button {
   min-width: 200px;
   padding: 10px 24px;
-  
+
   background-color: var(--color-brand);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--color-invert);
@@ -274,7 +274,7 @@ img {
 .team .title {
   margin-top: 0;
   margin-bottom: 10px;
-  
+
   color: var(--color-caption);
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -360,8 +360,6 @@ button.filter:focus {
 }
 
 .projects {
-
-  display: block;
   display: flex;
   flex-wrap: wrap;
 }
